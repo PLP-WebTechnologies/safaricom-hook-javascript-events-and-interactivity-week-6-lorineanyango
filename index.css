@@ -1,0 +1,146 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2 {
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #0056b3;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #003d80;
+}
+
+input, select {
+  padding: 8px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+}
+
+p {
+  margin: 8px 0;
+}
+
+/* Error Messages */
+p.hidden {
+  visibility: hidden;
+}
+p.hidden.error {
+  visibility: visible;
+  color: red;
+  margin-bottom: 5px;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal p {
+  margin-bottom: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Slider Styling */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #0056b3;
+  cursor: pointer;
+}
+
+input[type="range"] {
+  appearance: none;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #0056b3;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="range"]:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+/* Dropdown Message */
+#dropdownMessage {
+  margin-top: 10px;
+  font-style: italic;
+  color: #333;
+}
+/* Registration Form Styling */
+h2 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+

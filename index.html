@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>event listener</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>Interactive Webpage week 6 </h1>
+
+  <button id="toggleColorButton">Toggle Background Color</button>
+
+  <!-- Slider with Real-Time Feedback -->
+  <div>
+    <p>Adjust text size:</p>
+    <input id="textSlider" class="textSlider" type="range" min="16" max="48" value="16">
+    <p id="sliderText" style="font-size: 16px;">This is dynamic text!</p>
+  </div>
+
+  <!-- Modal -->
+  <button id="showModalButton">Show Modal</button>
+  <div id="overlay" class="hidden"></div>
+  <div id="modal" class="modal hidden">
+    <p>This is a modal window.</p>
+    <button id="closeModalButton">Close</button>
+  </div>
+
+  <!-- Form with Validation -->
+  <h2>Registration Form</h2>
+  <form id="registrationForm">
+    <label for="name">Name:</label>
+    <input id="name" type="text" required>
+    <p id="nameError" class="hidden" style="color: red;">Name must be at least 3 characters.</p>
+
+    <label for="email">Email:</label>
+    <input id="email" type="email" required>
+    <p id="emailError" class="hidden" style="color: red;">Enter a valid email address.</p>
+
+    <label for="password">Password:</label>
+    <input id="password" type="password" required>
+    <p id="passwordError" class="hidden" style="color: red;">Password must be at least 8 characters, include 1 uppercase letter and 1 number.</p>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Bonus: Dropdown -->
+  <h2>Select an Option</h2>
+  <select id="dropdown">
+    <option value="" selected>Select...</option>
+    <option value="Option 1">Option 1</option>
+    <option value="Option 2">Option 2</option>
+    <option value="Option 3">Option 3</option>
+  </select>
+  <p id="dropdownMessage"></p>
+  
+  <script src="index.js"></script>
+</body>
+</html>
